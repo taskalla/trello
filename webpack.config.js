@@ -1,5 +1,5 @@
-const path = require("path")
-const HTMLWebpackPlugin = require("html-webpack-plugin")
+const path = require("path");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -20,8 +20,8 @@ module.exports = {
         test: /\.html$/i,
         loader: "file-loader",
         options: {
-          name: '[name].[ext]',
-        }
+          name: "[name].[ext]",
+        },
       },
     ],
   },
@@ -35,7 +35,7 @@ module.exports = {
             <script src="https://p.trellocdn.com/power-up.min.js"></script>
           </body>
         </html>
-      `    
-    })
-  ]
+      `,
+    }),
+  ],
 };
