@@ -1,5 +1,5 @@
 import trello from "trello";
-import "./popup.html";
+import popup from "./popup.html";
 
 trello.initialize({
   "card-buttons": async (t, opts) => {
@@ -11,7 +11,7 @@ trello.initialize({
         callback: (t, opts) => {
           t.popup({
             title: "Hi there!",
-            url: "/popup.html",
+            url: popup,
           });
         },
       },

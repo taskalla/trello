@@ -1,3 +1,5 @@
+type PromiseOr<T> = T | Promise<T>;
+
 declare module "trello" {
   export interface PopupItem {
     text: string;
@@ -20,7 +22,7 @@ declare module "trello" {
         | ((
             t: TrelloContext,
             opts: { search: string }
-          ) => PopupItem[] | Promise<PopupItem[]>);
+          ) => PromiseOr<PopupItem[]>);
       url?: string;
       args?: { [key: string]: string };
       height?: number;
