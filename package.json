@@ -13,7 +13,7 @@
   },
   "scripts": {
     "format:check": "prettier --check .",
-    "build": "webpack --production",
+    "build": "webpack --mode=production",
     "watch": "webpack --watch"
   }
 }
